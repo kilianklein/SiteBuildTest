@@ -9,3 +9,5 @@ The css is divided in several files for clarity. As this test was concentrating 
 I only took in consideration those breakpoints for screen sizes (following bootstrap3): desktop normal screen, tablet, phone small screen.
 
 The language selector is not a selector. (didn't seem like the point of the test)
+
+The application was tested on chrome.
