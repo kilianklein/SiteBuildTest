@@ -8,3 +8,14 @@ div#container section#image-list {
     display: flex;
     justify-content: space-between;
 }
+
+@media only screen and (max-width : 480px) {
+    div#container section#image-list img{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    div#container section#image-list {
+        flex-direction: column;
+    }
+}

@@ -4,6 +4,9 @@ body{
     font-size: 8px;
     color: #666;
 }
+body, html {
+    height: 100%;
+}
 
 
 div#container{
@@ -18,9 +21,31 @@ div#container section#size-box {
     margin-bottom: 4%;
     width: 728px;
     height: 90px;
-    padding: 4% 0;
     text-align: center;
     font-size: 16px;
     margin-left: auto;
     margin-right: auto;
+}
+
+div#container section#size-box span#size-box-small {
+    display: none;
+}
+
+@media only screen and (max-width : 768px) {
+    div#container section#size-box {
+        width: 300px;
+        height: 50px;
+    }
+    div#container section#size-box span#size-box-big {
+        display: none;
+    }
+    div#container section#size-box span#size-box-small {
+        display: inline;
+    }
+}
+
+@media only screen and (max-width : 768px) and (min-width: 480px) {
+    p#extra-paragraph {
+        padding: 0 5%;
+    }
 }

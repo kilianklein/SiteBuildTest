@@ -21,3 +21,13 @@ div#container section#article-list article h4 {
     font-size: 12px;
     font-weight: normal;
 }
+
+@media only screen and (max-width : 480px) {
+    div#container section#article-list article{
+        margin-bottom: 20px;
+    }
+
+    div#container section#article-list {
+        flex-direction: column;
+    }
+}

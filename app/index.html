@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="swansky">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,30 +9,45 @@
         <link rel="stylesheet" href="styles/app.css">
         <link rel="stylesheet" href="styles/articles.css">
         <link rel="stylesheet" href="styles/images-panel.css">
-        <link rel="stylesheet" href="styles/menu.css">
+        <link rel="stylesheet" href="styles/header.css">
         <link rel="stylesheet" href="styles/footer.css">
     </head>
     <body>
         <header>
             <div id="brand-container">
-                <img id="brand-logo" src="assets/img/swansky_logo.png">
-                <div id="language-selector">
+                <div class="language-selector">
                     <img class="icon" src="assets/img/uk.png">
                     EN
                     <img class="icon" src="assets/img/chevron.png">
                 </div>
+
+                <div id="menu-open" ng-click="showMenu = true">
+                    -
+                </div>
+                <img id="brand-logo" src="assets/img/swansky_logo.png">
             </div>
-            <nav>
-                <a href="#home">Home</a>
-                <a href="#destinations">Destinations</a>
-                <a href="#entertainment">Entertainment</a>
-                <a href="#news">News</a>
-                <a href="#weather">Weather</a>
-                <a href="#shopping">Shopping</a>
-            </nav>
+            <div ng-show="showMenu">
+                <div id="grey-mask"></div>
+                <nav>
+                    <div id="menu-close" ng-click="showMenu = false">X</div>
+                    <a href="#home">Home</a>
+                    <a href="#destinations">Destinations</a>
+                    <a href="#entertainment">Entertainment</a>
+                    <a href="#news">News</a>
+                    <a href="#weather">Weather</a>
+                    <a href="#shopping">Shopping</a>
+                    <div>
+                        <div class="language-selector">
+                            <img class="icon" src="assets/img/uk.png">
+                            EN
+                            <img class="icon" src="assets/img/chevron.png">
+                        </div>
+                    </div>
+                </nav>
+            </div>
         </header>
         <div id="container">
-            <section id="size-box">728x90</section>
+            <section id="size-box"><span id="size-box-big">728x90</span><span id="size-box-small">300x50</span></section>
 
             <section id="image-list">
                 <img src="assets/img/swan.jpg">
@@ -59,17 +74,20 @@
                     </p>
                 </article>
             </section>
-            <p>
+            <p id="extra-paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur tempus nunc orci, et rutrum turpis facilisis ac. Ut dignissim placerat neque eget congue. Nulla erat urna, gravida vitae nunc id, vehicula auctor justo. Morbi lobortis diam sed ligula dapibus, at auctor arcu maximus. Mauris laoreet, lacus a finibus convallis, ex massa sagittis felis, eget rutrum metus eros id lorem. Fusce ac faucibus velit, et consectetur augue. Nulla quis risus elit. Cras auctor tellus ultrices ligula laoreet iaculis. Phasellus vehicula tristique erat vel hendrerit. Duis placerat ex eu velit vestibulum luctus. Nam elementum viverra volutpat. Aliquam nec enim vestibulum, scelerisque nunc elementum, lobortis arcu. Aliquam non arcu mattis, lobortis lectus ac, tincidunt erat. Donec eu sodales justo. Vestibulum nisl nibh, dapibus vel egestas vitae, auctor cursus ex. Maecenas vitae consequat nisl, nec gravida lacus.
             </p>
         </div>
 
         <footer>
-            <div id="copyright">Copyright Black Swan Avionics 2018</div>
             <nav>
                 <a href="#faq">FAQ</a>
                 <a href="#terms">Terms and Conditions</a>
+                <div id="copyright">Copyright Black Swan Avionics 2018</div>
             </nav>
+
         </footer>
+        <script type="text/javascript" src="assets/js/angular.min.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
     </body>
 </html>
