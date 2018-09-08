@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 8px;
+    color: #666;
+}
+
+
+div#container{
+    padding: 4% 4% 2% 4%;
+    background-color: #e5e4e5;
+}
+
+div#container section#size-box {
+    background-color: #eeeeee;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 4%;
+    width: 728px;
+    height: 90px;
+    padding: 4% 0;
+    text-align: center;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}

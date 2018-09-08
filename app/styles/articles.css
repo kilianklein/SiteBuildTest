@@ -1,0 +1,23 @@
+div#container section#article-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+}
+
+div#container section#article-list article {
+    border: 1px solid #e7e7e7;
+    background-color: white;
+    display: inline-block;
+    flex-grow: 0;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
+    padding: 15px;
+    flex-basis: 29%;
+}
+
+div#container section#article-list article h4 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    font-weight: normal;
+}

@@ -1,0 +1,10 @@
+div#container section#image-list img{
+    border-radius: 5px;
+    width: 48%;
+    align-self: center;
+}
+
+div#container section#image-list {
+    display: flex;
+    justify-content: space-between;
+}
